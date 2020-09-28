@@ -1,0 +1,27 @@
+:host {
+  width: 100vw;
+}
+
+.footer-border{
+  border-top: 1px solid #d1d1d6;
+  width: 100%;
+  margin: 0 ;
+}
+
+.footer-grid {
+  display: flex;
+
+}
+.menu-item{
+
+  a {
+    &.active .footer-icon {
+      color: #0063A7;
+      font-size: 32px;
+    }
+    .footer-icon {
+      color: #8cb1cd;
+      font-size: 32px;
+    }
+  }
+}
