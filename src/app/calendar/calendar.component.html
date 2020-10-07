@@ -1,1 +1,5 @@
-<p>calendar works!</p>
+<div nz-col [nzXl]="{span: 8, offset: 8}" [nzLg]="{span: 16, offset: 4}" [nzMd]="{ span: 24, offset: 0 }">
+  <nz-card>
+    <nz-calendar [(ngModel)]="date" [(nzMode)]="mode" (nzPanelChange)="panelChange($event)"></nz-calendar>
+  </nz-card>
+</div>

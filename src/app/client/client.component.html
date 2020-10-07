@@ -1,1 +1,58 @@
-<p>client works!</p>
+<div nz-col [nzXl]="{span: 8, offset: 8}" [nzLg]="{span: 16, offset: 4}" [nzMd]="{ span: 24, offset: 0 }">
+  <a routerLink="/user">
+    <nz-card style="position: relative">
+   <div style="display: inline-flex">
+     <div><nz-avatar [nzSize]="64" nzIcon="user"></nz-avatar></div>
+     <div><h3 style="margin-left: 20px">Name</h3>
+    <h3 style="margin-left: 20px">+995 555 555 555</h3>
+     </div>
+   </div>
+    <i class="icone" nz-icon nzType="right" nzTheme="outline"></i>
+ </nz-card>
+  </a>
+  <a routerLink="/password">
+  <nz-card style="position: relative">
+    <div style="display: inline-flex">
+      <i style="font-size: 20px" nz-icon nzType="lock" nzTheme="outline"></i>
+      <h3 style="margin-left: 20px">Password update</h3>
+    </div>
+    <i class="icone" nz-icon nzType="right" nzTheme="outline"></i>
+
+  </nz-card>
+  </a>
+  <a routerLink="/">
+    <nz-card style="position: relative">
+      <div style="display: inline-flex">
+        <i style="font-size: 20px" nz-icon nzType="credit-card" nzTheme="outline"></i>
+        <h3 style="margin-left: 20px">Loyalty Card</h3>
+      </div>
+      <i class="icone" nz-icon nzType="right" nzTheme="outline"></i>
+
+    </nz-card>
+  </a>
+  <a routerLink="/">
+    <nz-card style="position: relative">
+      <div style="display: inline-flex">
+        <i style="font-size: 20px" nz-icon nzType="form" nzTheme="outline"></i>
+        <h3 style="margin-left: 20px">Membership</h3>
+      </div>
+      <i class="icone" nz-icon nzType="right" nzTheme="outline"></i>
+
+    </nz-card>
+  </a>
+  <a routerLink="/">
+    <nz-card style="position: relative">
+      <div style="display: inline-flex">
+        <i style="font-size: 20px" nz-icon nzType="file-done" nzTheme="outline"></i>
+        <h3 style="margin-left: 20px">Certificates</h3>
+      </div>
+      <i class="icone" nz-icon nzType="right" nzTheme="outline"></i>
+    </nz-card>
+  </a>
+  <nz-card>
+    <div >
+      <button routerLink="/" style="width: 100%;font-size: 18px" nz-button nzType="primary" nzDanger> <i  nz-icon nzType="logout" nzTheme="outline"></i>logout</button>
+    </div>
+  </nz-card>
+</div>
+

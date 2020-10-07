@@ -1,4 +1,27 @@
 <div class="container">
   <div class="bg-color">
+      <div nz-row>
+        <div nz-col [nzXs]="{ span: 5, offset: 1 }" [nzLg]="{ span: 6, offset: 2 }">
+          <nz-button-group>
+            <button (click)="goBack()" nz-button style="background: #2D99E4;color: #001529;border-color: #2D99E4;font-weight: 600"><i nz-icon nzType="left"></i> Go back</button>
+          </nz-button-group>
+        </div>
+        <div nz-col [nzXs]="{ span: 11, offset: 1 }" [nzLg]="{ span: 6, offset: 2 }">
+          <div >
+            <img style="width: 200px" src="assets/img/logo.svg" alt="">
+          </div>
+        </div>
+        <div nz-col [nzXs]="{ span: 5, offset: 1 }" [nzLg]="{ span: 6, offset: 2 }">
+          <a nz-dropdown [nzDropdownMenu]="menu">
+            <img style="width: 30px" src="assets/img/georgia.png" alt="img">
+          </a>
+          <nz-dropdown-menu #menu="nzDropdownMenu" style="margin-top: 20px">
+            <ul nz-menu nzSelectable style="margin: 15px">
+              <li nz-menu-item><img style="width: 30px" src="assets/img/united-kingdom.png" alt="img"></li>
+              <li nz-menu-item><img style="width: 30px" src="assets/img/russia.png" alt="img"></li>
+            </ul>
+          </nz-dropdown-menu>
+        </div>
+      </div>
   </div>
 </div>

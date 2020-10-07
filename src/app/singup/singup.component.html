@@ -1,1 +1,22 @@
-<p>singup works!</p>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <a routerLink="/profile"><h2 class="active underlineHover"> Sign In </h2></a>
+    <a routerLink="/singup"><h2  class="active underlineHover">Sign Up </h2></a>
+
+
+
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="login" class="fadeIn second " name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="First Name">
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Last Name">
+
+
+      <input routerLink="/confirm" type="submit" class="fadeIn fourth" value="registration">
+    </form>
+
+
+
+  </div>
+</div>

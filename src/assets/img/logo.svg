@@ -9,8 +9,8 @@
       <path id="Path_1" data-name="Path 1" d="M378.819,533.32h44l40.691,77.416-9.37,16.452-27.337,3.2Z" fill="#023ca4"/>
       <path id="Path_2" data-name="Path 2" d="M378.819,533.32h44l40.691,77.416-10.568,19.65H426.8Z" transform="translate(73)" fill="#012e5d"/>
       <circle id="Ellipse_1" data-name="Ellipse 1" cx="21" cy="21" r="21" transform="translate(534 531)" fill="#012e5d"/>
-      <text id="WEBAPP" transform="translate(865 583)" fill="#012e5d" font-size="70" font-family="Superclarendon-Bold, Superclarendon" font-weight="700" letter-spacing="0.068em"><tspan x="-194.6" y="0">WEBAPP</tspan></text>
-      <text id="FOR_YOUR_BUSINESS" data-name="FOR YOUR BUSINESS" transform="translate(865 630)" fill="#023ca4" font-size="24" font-family="Rockwell-Regular, Rockwell" letter-spacing="0.329em"><tspan x="-189.953" y="0">FOR YOUR BUSINESS</tspan></text>
+      <text id="WEBAPP" transform="translate(865 583)" fill="#001529" font-size="70" font-family="Superclarendon-Bold, Superclarendon" font-weight="700" letter-spacing="0.068em"><tspan x="-194.6" y="0">WEBAPP</tspan></text>
+      <text id="FOR_YOUR_BUSINESS" data-name="FOR YOUR BUSINESS" transform="translate(865 630)" fill="#ffffff" font-size="24" font-family="Rockwell-Regular, Rockwell" letter-spacing="0.329em"><tspan x="-189.953" y="0">FOR YOUR BUSINESS</tspan></text>
     </g>
     <path id="Path_26" data-name="Path 26" d="M3329.852-4977.936v100.352" transform="translate(-3065 5008)" fill="none" stroke="#023ca4" stroke-width="2"/>
   </g>

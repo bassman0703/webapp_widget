@@ -1,1 +1,38 @@
-<p>user works!</p>
+<div nz-col [nzXl]="{span: 8, offset: 8}" [nzLg]="{span: 16, offset: 4}" [nzMd]="{ span: 24, offset: 0 }" style="padding: 20px">
+  <nz-card>
+    <nz-input-group [nzSuffix]="suffixTemplateInfo" [nzPrefix]="prefixTemplateUser">
+      <input type="text" nz-input placeholder="Enter your username"/>
+    </nz-input-group>
+    <ng-template #prefixTemplateUser><i nz-icon nzType="user"></i></ng-template>
+
+    <div class="border" style="margin: 10px"></div>
+
+    <nz-form-item style="margin-bottom: 0">
+      <nz-input-group [nzSuffix]="suffixTemplateInfo" [nzPrefix]="prefixTemplateEmail">
+        <input nz-input name="email" placeholder="Enter your Email" type="email" id="email">
+      </nz-input-group>
+      <ng-template #prefixTemplateEmail><i nz-icon nzType="mail" nzTheme="outline"></i></ng-template>
+    </nz-form-item>
+    <div style="margin: 10px" class="border"></div>
+    <nz-form-item>
+      <form style="width: 100%" nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+        <nz-form-control
+          [nzValidateStatus]="validateForm.controls['phoneNumber']"
+          nzErrorTip="Please input your phone number!"
+        >
+          <nz-input-group [nzAddOnBefore]="addOnBeforeTemplate">
+            <ng-template #addOnBeforeTemplate>
+              <nz-select formControlName="phoneNumberPrefix" class="phone-select">
+                <nz-option nzLabel="+86" nzValue="+86"></nz-option>
+                <nz-option nzLabel="+87" nzValue="+87"></nz-option>
+              </nz-select>
+            </ng-template>
+            <input formControlName="phoneNumber" id="'phoneNumber'" nz-input placeholder="PhoneNumber"/>
+          </nz-input-group>
+        </nz-form-control>
+      </form>
+    </nz-form-item>
+    <button nz-button nzType="primary" nzBlock>Save</button>
+
+  </nz-card>
+</div>

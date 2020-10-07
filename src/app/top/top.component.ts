@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {NzPlacementType} from 'ng-zorro-antd';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-top',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private location:Location
+  ) { }
+
 
   ngOnInit(): void {
   }
 
+  goBack() {
+    this.location.back()
+  }
 }

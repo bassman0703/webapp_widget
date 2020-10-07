@@ -1,1 +1,53 @@
-<p>login works!</p>
+<form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()"
+      style="align-items: center; padding: 20px">
+
+  <nz-card>
+    <nz-form-item style="margin-bottom: 0">
+
+      <nz-form-control
+
+        [nzValidateStatus]="validateForm.controls['phoneNumber']"
+        nzErrorTip="Please input your phone number!"
+      >
+        <nz-input-group [nzAddOnBefore]="addOnBeforeTemplate">
+          <ng-template #addOnBeforeTemplate>
+            <nz-select formControlName="phoneNumberPrefix" class="phone-select">
+              <nz-option nzLabel="+86" nzValue="+86"></nz-option>
+              <nz-option nzLabel="+87" nzValue="+87"></nz-option>
+            </nz-select>
+          </ng-template>
+          <input formControlName="phoneNumber" id="'phoneNumber'" nz-input placeholder="PhoneNumber"/>
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-control nzErrorTip="Please input your Password!">
+        <nz-input-group nzPrefixIcon="lock">
+          <input id="login" type="password" nz-input formControlName="password" placeholder="Password"/>
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-input-group [nzSuffix]="suffixTemplateInfo" [nzPrefix]="prefixTemplateUser">
+      <input type="text" nz-input placeholder="Enter your username"/>
+    </nz-input-group>
+    <ng-template #prefixTemplateUser><i nz-icon nzType="user"></i></ng-template>
+    <div nz-row class="login-form-margin">
+      <div nz-col [nzSpan]="12">
+        <label nz-checkbox formControlName="remember">
+          <span>Remember me</span>
+        </label>
+      </div>
+
+    </div>
+    <a routerLink="/client">
+      <button style="font-size: 18px" nz-button class="login-form-button login-form-margin" [nzType]="'primary'">
+        <i nz-icon nzType="login" nzTheme="outline"></i>Log in
+      </button>
+    </a>
+
+  </nz-card>
+
+</form>
